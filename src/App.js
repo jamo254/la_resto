@@ -40,15 +40,15 @@ const LArcolaioWebsite = () => {
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'menu', label: 'Menu' },
-    { id: 'about', label: 'About us' },
-    { id: 'reservation', label: 'Reservation' },
+    { id: 'about', label: 'Chi Siamo' },
+    { id: 'reservation', label: 'Prenotazioni' },
     { id: 'blog', label: 'Blog' }
   ];
 
   const stats = [
-    { number: '400+', label: 'Food Items' },
-    { number: '78+', label: 'Restaurants' },
-    { number: '40k+', label: 'Happy customers' }
+    { number: '400+', label: 'Piatti' },
+    { number: '78+', label: 'Ristoranti' },
+    { number: '40k+', label: 'Clienti Felici' }
   ];
 
   const dishes = [
@@ -155,11 +155,11 @@ const LArcolaioWebsite = () => {
             <div className="space-y-6 sm:space-y-8 z-10 text-center lg:text-left">
               <div className="space-y-3 sm:space-y-4">
                 <p className="text-xs sm:text-sm uppercase tracking-wider text-gray-600 font-sans">
-                  WELCOME TO OUR RESTAURANT
+                  BENVENUTI NEL NOSTRO RISTORANTE
                 </p>
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight text-gray-900">
-                  Profitez d'une nourriture 
-                  <span className="block mt-2">saine et délicieuse.</span>
+                  Goditi un cibo 
+                  <span className="block mt-2">sano e delizioso.</span>
                 </h1>
               </div>
 
@@ -168,13 +168,13 @@ const LArcolaioWebsite = () => {
                   href="tel:+393342150685"
                   className="bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-sans font-semibold hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 text-center"
                 >
-                  Order now
+                  Ordina Ora
                 </a>
                 <button
                   onClick={() => scrollToSection('reservation')}
                   className="bg-transparent border-2 border-black text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-sans font-semibold hover:bg-black hover:text-white transition-all duration-300 text-center"
                 >
-                  Reservation
+                  Prenota
                 </button>
               </div>
             </div>
@@ -185,7 +185,7 @@ const LArcolaioWebsite = () => {
               <div className="absolute inset-0">
                 <img 
                   src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800&q=80" 
-                  alt="Main dish" 
+                  alt="Piatto principale" 
                   className="w-full h-full object-cover rounded-3xl shadow-2xl"
                 />
               </div>
@@ -193,21 +193,21 @@ const LArcolaioWebsite = () => {
               {/* Floating images - hidden on mobile */}
               <img 
                 src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=300&q=80" 
-                alt="Food item 1" 
+                alt="Piatto 1" 
                 className="absolute -top-8 -right-8 w-32 sm:w-40 lg:w-48 h-32 sm:h-40 lg:h-48 object-cover rounded-2xl shadow-2xl hidden md:block"
                 style={{ animation: 'float 6s ease-in-out infinite' }}
               />
               
               <img 
                 src="https://images.unsplash.com/photo-1608897013039-887f21d8c804?w=200&q=80" 
-                alt="Food item 2" 
+                alt="Piatto 2" 
                 className="absolute top-1/4 -left-8 lg:-left-12 w-24 sm:w-28 lg:w-32 h-24 sm:h-28 lg:h-32 object-cover rounded-2xl shadow-2xl hidden md:block"
                 style={{ animation: 'float 8s ease-in-out infinite', animationDelay: '2s' }}
               />
               
               <img 
                 src="https://images.unsplash.com/photo-1563379091339-03b21ab4a4f8?w=200&q=80" 
-                alt="Food item 3" 
+                alt="Piatto 3" 
                 className="absolute bottom-8 -left-6 lg:-left-8 w-28 sm:w-32 lg:w-36 h-28 sm:h-32 lg:h-36 object-cover rounded-2xl shadow-2xl hidden md:block"
                 style={{ animation: 'float 7s ease-in-out infinite', animationDelay: '1s' }}
               />
@@ -224,7 +224,7 @@ const LArcolaioWebsite = () => {
             <div className="absolute inset-0">
               <img 
                 src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=1200&q=80" 
-                alt="Croissants" 
+                alt="Croissant" 
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent"></div>
@@ -247,7 +247,7 @@ const LArcolaioWebsite = () => {
                   onClick={() => scrollToSection('menu')}
                   className="bg-white text-black px-6 sm:px-8 py-3 sm:py-4 rounded-full font-sans font-semibold hover:bg-gray-100 transition-all duration-300 inline-flex items-center space-x-2 group"
                 >
-                  <span>Explore Dishes</span>
+                  <span>Esplora i Piatti</span>
                   <ChevronDown className="w-5 h-5 group-hover:translate-y-1 transition-transform" />
                 </button>
               </div>
@@ -268,7 +268,7 @@ const LArcolaioWebsite = () => {
       <section id="menu" className="py-16 sm:py-20 bg-[#F5E6D3]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12 sm:mb-16">
-            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">Our Signature Dishes</h2>
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4">I Nostri Piatti Speciali</h2>
             <p className="text-gray-600 text-base sm:text-lg max-w-2xl mx-auto px-4">
               Dalle classiche ricette tradizionali alle creazioni moderne. Ogni piatto preparato con passione.
             </p>
@@ -308,7 +308,7 @@ const LArcolaioWebsite = () => {
 
           <div className="text-center mt-8 sm:mt-12">
             <button className="bg-orange-500 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-full font-sans font-semibold hover:bg-orange-600 transition-all duration-300 transform hover:scale-105">
-              View Full Menu
+              Vedi Menu Completo
             </button>
           </div>
         </div>
@@ -320,7 +320,7 @@ const LArcolaioWebsite = () => {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
             <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
-                About <span className="text-orange-500">L'Arcolaio</span>
+                Chi Siamo <span className="text-orange-500">L'Arcolaio</span>
               </h2>
               <p className="text-gray-600 text-base sm:text-lg leading-relaxed">
                 Nel cuore di Colfiorito, L'Arcolaio rappresenta la vera essenza della cucina tradizionale italiana. 
@@ -333,21 +333,21 @@ const LArcolaioWebsite = () => {
               
               <div className="flex items-center space-x-2 bg-orange-50 px-4 sm:px-6 py-3 rounded-full inline-flex">
                 <Users className="w-5 h-5 text-orange-600" />
-                <span className="font-semibold text-orange-600 text-sm sm:text-base">Women-Owned Business</span>
+                <span className="font-semibold text-orange-600 text-sm sm:text-base">Attività a Conduzione Femminile</span>
               </div>
 
               <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-6">
                 <div>
                   <div className="text-2xl sm:text-3xl font-bold text-gray-900">15+</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Years</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Anni</div>
                 </div>
                 <div>
                   <div className="text-2xl sm:text-3xl font-bold text-gray-900">4.1★</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Rating</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Valutazione</div>
                 </div>
                 <div>
                   <div className="text-2xl sm:text-3xl font-bold text-gray-900">105+</div>
-                  <div className="text-xs sm:text-sm text-gray-600">Reviews</div>
+                  <div className="text-xs sm:text-sm text-gray-600">Recensioni</div>
                 </div>
               </div>
             </div>
@@ -355,15 +355,15 @@ const LArcolaioWebsite = () => {
             <div className="relative order-1 lg:order-2">
               <img 
                 src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80" 
-                alt="Restaurant interior" 
+                alt="Interno del ristorante" 
                 className="w-full h-[300px] sm:h-[400px] lg:h-[500px] object-cover rounded-3xl shadow-2xl"
               />
               <div className="absolute -bottom-6 -left-6 bg-white p-4 sm:p-6 rounded-2xl shadow-xl hidden sm:block">
                 <div className="flex items-center space-x-3 sm:space-x-4">
                   <Award className="w-10 h-10 sm:w-12 sm:h-12 text-orange-500" />
                   <div>
-                    <div className="font-bold text-gray-900 text-sm sm:text-base">Best Quality</div>
-                    <div className="text-xs sm:text-sm text-gray-600">Ingredients</div>
+                    <div className="font-bold text-gray-900 text-sm sm:text-base">Migliore Qualità</div>
+                    <div className="text-xs sm:text-sm text-gray-600">Ingredienti</div>
                   </div>
                 </div>
               </div>
@@ -375,7 +375,7 @@ const LArcolaioWebsite = () => {
       {/* Reservation Section */}
       <section id="reservation" className="py-16 sm:py-20 bg-[#F5E6D3]">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Make a Reservation</h2>
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 sm:mb-6">Prenota un Tavolo</h2>
           <p className="text-gray-600 text-base sm:text-lg mb-8 sm:mb-12 max-w-2xl mx-auto">
             Prenota il tuo tavolo per un'esperienza culinaria indimenticabile. 
             Chiamaci o scrivici per prenotare.
@@ -385,7 +385,7 @@ const LArcolaioWebsite = () => {
             {/* Call */}
             <div className="bg-white p-6 sm:p-8 rounded-3xl shadow-lg hover:shadow-xl transition-all duration-300">
               <Phone className="w-10 h-10 sm:w-12 sm:h-12 text-orange-500 mx-auto mb-4" />
-              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Call Us</h3>
+              <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-2">Chiamaci</h3>
               <p className="text-gray-600 mb-4 text-sm sm:text-base">Prenota telefonicamente</p>
               <a
                 href="tel:+393342150685"
@@ -406,7 +406,7 @@ const LArcolaioWebsite = () => {
                 rel="noopener noreferrer"
                 className="text-green-600 font-bold text-base sm:text-lg hover:text-green-700"
               >
-                Chat Now
+                Chatta Ora
               </a>
             </div>
           </div>
@@ -416,11 +416,11 @@ const LArcolaioWebsite = () => {
               <div className="flex items-center space-x-2">
                 <Clock className="w-5 h-5 text-orange-500" />
                 <span className="font-sans">
-                  <span className="font-bold">Open:</span> 12:00 - 21:30
+                  <span className="font-bold">Aperto:</span> 12:00 - 21:30
                 </span>
               </div>
               <span className="hidden sm:inline">•</span>
-              <span className="text-green-600 font-bold">● Open Now</span>
+              <span className="text-green-600 font-bold">● Aperto Ora</span>
             </div>
           </div>
         </div>
@@ -433,7 +433,7 @@ const LArcolaioWebsite = () => {
           <div className="columns-1 sm:columns-2 lg:columns-4 gap-8 space-y-8 sm:space-y-0 mb-8 sm:mb-12">
             {/* Navigate */}
             <div className="break-inside-avoid">
-              <h3 className="font-bold mb-4 text-base sm:text-lg">Navigate</h3>
+              <h3 className="font-bold mb-4 text-base sm:text-lg">Naviga</h3>
               <ul className="space-y-2 font-sans text-sm">
                 {navItems.map(item => (
                   <li key={item.id}>
@@ -461,7 +461,7 @@ const LArcolaioWebsite = () => {
 
             {/* Follow Us */}
             <div className="break-inside-avoid">
-              <h3 className="font-bold mb-4 text-base sm:text-lg">Follow Us</h3>
+              <h3 className="font-bold mb-4 text-base sm:text-lg">Seguici</h3>
               <ul className="space-y-2 font-sans text-sm">
                 <li>
                   <a href="https://m.facebook.com/larcolaio" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-orange-500 transition-colors">
@@ -479,7 +479,7 @@ const LArcolaioWebsite = () => {
 
             {/* Contact */}
             <div className="break-inside-avoid">
-              <h3 className="font-bold mb-4 text-base sm:text-lg">Contact</h3>
+              <h3 className="font-bold mb-4 text-base sm:text-lg">Contatti</h3>
               <ul className="space-y-3 text-gray-400 font-sans text-sm">
                 <li className="flex items-start space-x-2">
                   <Phone className="w-4 h-4 mt-1 flex-shrink-0" />
@@ -499,13 +499,13 @@ const LArcolaioWebsite = () => {
 
           <div className="border-t border-gray-700 pt-6 sm:pt-8 text-center">
             <p className="text-gray-400 text-xs sm:text-sm font-sans px-4 mb-3">
-              ©2025 L'ARCOLAIO All rights reserved • 
-              <span className="text-orange-500 ml-2">Designed by Fluttertop</span>
+              ©2025 L'ARCOLAIO Tutti i diritti riservati • 
+              <span className="text-orange-500 ml-2">Progettato da Fluttertop</span>
             </p>
             <div className="mt-4 flex flex-wrap justify-center gap-3 sm:gap-6 px-4">
-              <a href="#" className="text-gray-400 hover:text-white text-xs sm:text-sm">Licenses</a>
-              <a href="#" className="text-gray-400 hover:text-white text-xs sm:text-sm">Changelog</a>
-              <a href="#" className="text-gray-400 hover:text-white text-xs sm:text-sm">Style Guide</a>
+              <a href="#" className="text-gray-400 hover:text-white text-xs sm:text-sm">Licenze</a>
+              <a href="#" className="text-gray-400 hover:text-white text-xs sm:text-sm">Registro Modifiche</a>
+              <a href="#" className="text-gray-400 hover:text-white text-xs sm:text-sm">Guida di Stile</a>
             </div>
           </div>
         </div>
