@@ -419,7 +419,7 @@ const LArcolaioWebsite = () => {
                   {/* Main founder photo - Photo 1 */}
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl mb-6">
                     <img 
-                      src="/images/tiziana-1.jpg" 
+                      src="https://res.cloudinary.com/jamocode/image/upload/v1770287368/tiziana-1_f77hew.jpg" 
                       alt="Tiziana Pagliarini - Fondatrice L'Arcolaio" 
                       className="w-full h-[300px] sm:h-[350px] object-cover"
                     />
@@ -429,7 +429,7 @@ const LArcolaioWebsite = () => {
                   {/* Second founder photo - Photo 2 */}
                   <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                     <img 
-                      src="/images/tiiziana-2.jpg" 
+                      src="https://res.cloudinary.com/jamocode/image/upload/v1770287366/tiziana-2_s1f51b.jpg" 
                       alt="Tiziana Pagliarini con ospiti al ristorante" 
                       className="w-full h-[300px] sm:h-[350px] object-cover"
                     />
