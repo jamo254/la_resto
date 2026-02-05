@@ -317,7 +317,7 @@ const LArcolaioWebsite = () => {
       {/* About Section */}
       <section id="about" className="py-16 sm:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-16 sm:mb-24">
             <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
                 Chi Siamo <span className="text-orange-500">L'Arcolaio</span>
@@ -365,6 +365,88 @@ const LArcolaioWebsite = () => {
                     <div className="font-bold text-gray-900 text-sm sm:text-base">Migliore Qualità</div>
                     <div className="text-xs sm:text-sm text-gray-600">Ingredienti</div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Founder Section - Tiziana Pagliarini */}
+          <div className="bg-gradient-to-br from-orange-50 to-orange-100/50 rounded-3xl p-6 sm:p-10 lg:p-12">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+              <div className="order-2 lg:order-1">
+                <div className="inline-block bg-orange-500 text-white px-4 py-2 rounded-full text-xs sm:text-sm font-sans font-semibold mb-4">
+                  La Nostra Fondatrice
+                </div>
+                <h3 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+                  Tiziana Pagliarini
+                </h3>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4">
+                  Con una passione che nasce dal cuore e si esprime attraverso ogni piatto, Tiziana Pagliarini 
+                  ha fondato L'Arcolaio con la visione di portare l'autentica tradizione culinaria umbra sulle 
+                  tavole di Colfiorito.
+                </p>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-4">
+                  La sua dedizione alla qualità, l'amore per gli ingredienti locali e il rispetto per le ricette 
+                  tradizionali hanno trasformato L'Arcolaio in un punto di riferimento per chi cerca 
+                  l'autenticità della cucina italiana.
+                </p>
+                <p className="text-gray-700 text-base sm:text-lg leading-relaxed mb-6">
+                  Ogni giorno, Tiziana supervisiona personalmente la preparazione dei piatti, assicurandosi che 
+                  ogni ospite viva un'esperienza culinaria indimenticabile, proprio come a casa.
+                </p>
+                
+                <div className="flex flex-wrap gap-3">
+                  <div className="bg-white px-4 py-2 rounded-full shadow-sm">
+                    <span className="text-sm font-sans text-gray-700">
+                      <span className="font-bold text-orange-600">♥</span> Passione per la Tradizione
+                    </span>
+                  </div>
+                  <div className="bg-white px-4 py-2 rounded-full shadow-sm">
+                    <span className="text-sm font-sans text-gray-700">
+                      <span className="font-bold text-orange-600">★</span> Ingredienti Locali
+                    </span>
+                  </div>
+                  <div className="bg-white px-4 py-2 rounded-full shadow-sm">
+                    <span className="text-sm font-sans text-gray-700">
+                      <span className="font-bold text-orange-600">✓</span> Qualità Garantita
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div className="order-1 lg:order-2">
+                <div className="relative">
+                  {/* Main founder photo - Photo 1 */}
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl mb-6">
+                    <img 
+                      src="/images/tiziana-1.jpg" 
+                      alt="Tiziana Pagliarini - Fondatrice L'Arcolaio" 
+                      className="w-full h-[300px] sm:h-[350px] object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                  </div>
+                  
+                  {/* Second founder photo - Photo 2 */}
+                  <div className="relative rounded-3xl overflow-hidden shadow-2xl">
+                    <img 
+                      src="/images/tiiziana-2.jpg" 
+                      alt="Tiziana Pagliarini con ospiti al ristorante" 
+                      className="w-full h-[300px] sm:h-[350px] object-cover"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    
+                    {/* Quote card on second image */}
+                    <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-sm p-4 sm:p-6 rounded-2xl shadow-xl">
+                      <p className="text-gray-800 italic text-sm sm:text-base font-sans">
+                        "Ogni piatto racconta una storia, ogni ingrediente porta con sé la tradizione della nostra terra."
+                      </p>
+                      <p className="text-orange-600 font-bold mt-2 text-sm">— Tiziana Pagliarini</p>
+                    </div>
+                  </div>
+                  
+                  {/* Decorative elements */}
+                  <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-orange-500 rounded-full opacity-20 blur-2xl"></div>
+                  <div className="absolute top-1/3 -left-4 w-32 h-32 bg-orange-300 rounded-full opacity-20 blur-2xl"></div>
                 </div>
               </div>
             </div>
